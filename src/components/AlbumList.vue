@@ -3,7 +3,7 @@
         tag="div"
         :to="{
             name: 'album', 
-            params: { albumId: id, collectionId: collection, recommended: recommendations }}">
+            params: { albumId: id, collectionId: collection}}">
         <AlbumRow :class="genre">
             <AlbumInfo>
                 <transition appear name="slide-in" mode="out-in">
@@ -80,11 +80,12 @@ export default {
     },
     year: String,
     collection: String
-  },
-  recommendations: {
-      type: Array,
-      default: ['No recommendations yet.']
-  }
+    },
+    opinion: {
+        type: String,
+        default: 'Bear with me, still writing this.'
+    },
+    link: String
 }
 </script>
 

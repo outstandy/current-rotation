@@ -14,6 +14,12 @@ export const H2 = styled.h2`
   font-size: 4rem;
   color: ${colors.white};
   margin: 0;
+  text-decoration: 1px underline ${colors.black};
+  transition: text-decoration 0.2s ease-in-out
+  &:hover {
+    text-decoration: 1px underline ${colors.white};
+    text-decoration-skip-ink: auto;
+  }
 `;
 
 export const H3 = styled.h3`

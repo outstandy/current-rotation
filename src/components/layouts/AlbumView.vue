@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Hero :class="this.album.genre">
+        <Hero>
             <Lockup>
                 <transition
                     appear
@@ -14,7 +14,9 @@
                     appear
                     name="slide-in-2"
                     mode="out-in">
-                        <H2>{{this.album.title}}</H2>
+                        <a :href="this.album.link">
+                            <H2>{{this.album.title}}</H2>
+                        </a>
                 </transition>
                 <transition
                     appear
@@ -35,14 +37,7 @@
                 name="slide-in-5"
                 mode="out-in">
             <Information>
-                <P>Here’s a couple of paragraphs about the album and why I liked it. Something riffing on the sonic qualities, its technical merits (or lack thereof), and what it means to me.</P>
-                <P>Maybe some other recommendations. Similar bands, if you want to keep listening in this vein. How many to offer?</P>
-                <H3>Recommendations</H3>
-                <ul>
-                    <li v-for="(recommendation, index) in this.$route.params.recommendations"
-                    :key="index">{{recommendation}}
-                    </li>
-                </ul>
+                <P>{{this.album.opinion}}</P>
             </Information>
         </transition>
     </div>
@@ -67,6 +62,7 @@ const slideBar = keyframes`
 
 const Hero = styled.div`
     position: relative;
+    margin-bottom: 2rem;
     &:after {
         animation: ${slideBar} 0.24s linear forwards;
         content: '';
