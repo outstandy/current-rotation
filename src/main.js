@@ -6,6 +6,7 @@ import CurrentRotation from './components/layouts/CurrentRotation.vue'
 import QuietTime from './components/layouts/QuietTime.vue'
 import FightMe from './components/layouts/FightMe.vue'
 import AlbumView from './components/layouts/AlbumView.vue'
+import Form from './components/layouts/Form.vue'
 
 Vue.config.productionTip = false
 
@@ -30,6 +31,12 @@ const router = new VueRouter({
       path: '/fight-me',
       components: {
         default: FightMe,
+      }
+    },
+    {
+      path: '/add',
+      components: {
+        default: Form,
       }
     },
     {
