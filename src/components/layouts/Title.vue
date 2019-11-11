@@ -15,7 +15,7 @@
             mode="out-in"
             >
         <P class="body">
-           I love swapping music with pals, but often I'm too self conscious to get into exactly what I listen to and why.
+           Lately I've been real curious to look more closely at the music I listen to. What makes a particular album work for me? What are trends and patterns in what I listen to?
         </P>
         </transition>
         <transition
@@ -23,10 +23,18 @@
             name="slide-in-3"
             mode="out-in"
             >
-        <P class="body">tl;dr I didn't wanna make a blog so I built this instead 🙃</P>
+            <P class="body">
+                Anyway I wrote a bunch of stuff about albums I've been listening to lately. 
+            </P>
         </transition>
-        <Detail>Made by Andy Birch</Detail>
-        <Detail>Visit me on <a href="#">Twitter</a></Detail>
+         <transition
+            appear
+            name="slide-in-4"
+            mode="out-in"
+            >
+            <P class="body">tl;dr I didn't wanna make a blog so I built this instead 🙃</P>
+         </transition>
+        <Detail>Built by <a href="https://twitter.com/outstandy">Andy Birch</a> with <a href="https://vuejs.org/">Vue</a> & <a href="https://firebase.google.com/">Firestore</a>.</Detail>
     </TitleFlex>
 </template>
 
@@ -51,9 +59,11 @@ export default {
 .slide-in-1-enter-active,
 .slide-in-2-enter-active,
 .slide-in-3-enter-active,
+.slide-in-4-enter-active,
 .slide-in-1-leave-active,
 .slide-in-2-leave-active,
-.slide-in-3-leave-active  {
+.slide-in-3-leave-active,
+.slide-in-4-leave-active  {
   transition-duration: 0.4s;
   transition-property: transform opacity;
   transition-timing-function: ease;
@@ -66,15 +76,22 @@ export default {
     transition-delay: 0.3s
 }
 
+.slide-in-4-enter-active {
+    transition-delay: 0.45s
+}
+
+
 .slide-in-1-enter,
 .slide-in-2-enter,
-.slide-in-3-enter {
+.slide-in-3-enter,
+.slide-in-4-enter {
   transform: translateY(10px);
   opacity: 0;
 }
 .slide-in-1-leave-active,
 .slide-in-2-leave-active,
-.slide-in-3-leave-active {
+.slide-in-3-leave-active,
+.slide-in-4-leave-active {
   transform: translateY(0px);
   opacity: 1;
 }

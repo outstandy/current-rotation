@@ -61,6 +61,9 @@ export const Detail = styled.p`
       }
     }
   }
+  &.body {
+    margin-bottom: 1rem;
+  }
 `;
 
 export const Link = styled.a`

@@ -40,7 +40,7 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/album/:albumId',
+      path: '/:collectionId/album/:albumId',
       name: 'album',
       components: {
         default: AlbumView
