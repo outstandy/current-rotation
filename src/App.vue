@@ -49,7 +49,7 @@ export default {
         Velocity(el, 
                 { opacity: 0, translateX: '-30px' },
                 { complete: done })
-    }
+    },
   }
 }
 </script>

@@ -15,10 +15,10 @@ export const H2 = styled.h2`
   color: ${colors.white};
   margin: 0;
   text-decoration: 1px underline ${colors.black};
+  text-decorationx-skip-ink: auto;
   transition: text-decoration 0.2s ease-in-out
   &:hover {
     text-decoration: 1px underline ${colors.white};
-    text-decoration-skip-ink: auto;
   }
 `;
 
@@ -80,5 +80,88 @@ export const Link = styled.a`
   transition: opacity 0.2s ease;
   transition: all 0.2s ease;
   &:hover {
+  }
+`;
+
+export const TextInput = styled.input`
+  position: relative;
+  font-size: 1rem;
+  font-family: ${fonts.mono};
+  border: 0;
+  border-bottom: 1px solid ${colors.gray};
+  padding: 0.5rem 0;
+  display: block;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  margin-right: 1rem;
+  background-color: ${colors.black};
+  transition: all 0.2s ease-in-out;
+  color: ${colors.gray};
+  margin-bottom: 1rem;
+  &:focus {
+    color: ${colors.white};
+    border-bottom: 1px solid ${colors.white};
+  }
+`;
+
+export const TextArea = styled.textarea`
+  position: relative;
+  font-size: 1rem;
+  font-family: ${fonts.mono};
+  border: 0;
+  border-bottom: 1px solid ${colors.gray};
+  padding: 0.5rem 0;
+  display: block;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  background-color: ${colors.black};
+  color: ${colors.gray};
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+  &:focus {
+    color: ${colors.white};
+    border-bottom: 1px solid ${colors.white};
+  }
+`;
+
+export const Select = styled.select`
+  font-size: 1rem;
+  font-family: ${fonts.mono};
+  border: 0;
+  border-bottom: 1px solid ${colors.gray};
+  padding: 0.5rem 0;
+  display: block;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  background-color: ${colors.black};
+  color: ${colors.gray};
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+  &:focus {
+    color: ${colors.white};
+    border-bottom: 1px solid ${colors.white};
+  }
+`;
+
+export const Button = styled.button`
+  font-size: 1rem;
+  background: ${gradients.indie};
+  padding: 0.5rem 1rem;
+  border: 0;
+  font-family: ${fonts.mono};
+  color: ${colors.white};
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 8px rgba(51,251,155,0.5);
   }
 `;

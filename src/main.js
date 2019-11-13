@@ -7,6 +7,7 @@ import QuietTime from './components/layouts/QuietTime.vue'
 import FightMe from './components/layouts/FightMe.vue'
 import AlbumView from './components/layouts/AlbumView.vue'
 import Form from './components/layouts/Form.vue'
+import NotFound from './components/layouts/NotFound.vue'
 
 Vue.config.productionTip = false
 
@@ -45,7 +46,13 @@ const router = new VueRouter({
       components: {
         default: AlbumView
       }
-    }
+    },
+    {
+      path: '*',
+      components: {
+        default: NotFound
+      }
+    },
   ]
 })
 
