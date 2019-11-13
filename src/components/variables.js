@@ -17,3 +17,10 @@ export const fonts = {
     display: "bely-display, sans-serif;",
     mono: "covik-sans-mono, sans-serif;"
 }
+
+export const spacing = {
+    xSml: "0.5rem",
+    sml: "1rem",
+    reg: "2rem",
+    lrg: "3rem"
+}

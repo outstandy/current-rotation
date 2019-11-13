@@ -46,7 +46,7 @@ export default {
         TextInput,
         Button,
         TextArea,
-        Select
+        Select,
     },
     data() {
         return {
@@ -63,6 +63,9 @@ export default {
                 id: '',
             },
         }
+    },
+    props: {
+        margin: String
     },
     created() {
         const newID = this.generateRandomString(12)

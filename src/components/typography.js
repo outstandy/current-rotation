@@ -17,7 +17,7 @@ export const H2 = styled.h2`
   text-decoration: 1px underline ${colors.black};
   text-decorationx-skip-ink: auto;
   transition: text-decoration 0.2s ease-in-out
-  &:hover {
+  &.link:hover {
     text-decoration: 1px underline ${colors.white};
   }
 `;
@@ -88,7 +88,7 @@ export const TextInput = styled.input`
   font-size: 1rem;
   font-family: ${fonts.mono};
   border: 0;
-  border-bottom: 1px solid ${colors.gray};
+  border-bottom: 1px solid rgba(138,141,144,0.5);
   padding: 0.5rem 0;
   display: block;
   outline: none;
@@ -110,7 +110,7 @@ export const TextArea = styled.textarea`
   font-size: 1rem;
   font-family: ${fonts.mono};
   border: 0;
-  border-bottom: 1px solid ${colors.gray};
+  border-bottom: 1px solid rgba(138,141,144,0.5);
   padding: 0.5rem 0;
   display: block;
   -moz-appearance: none;
@@ -132,7 +132,7 @@ export const Select = styled.select`
   font-size: 1rem;
   font-family: ${fonts.mono};
   border: 0;
-  border-bottom: 1px solid ${colors.gray};
+  border-bottom: 1px solid rgba(138,141,144,0.5);
   padding: 0.5rem 0;
   display: block;
   -moz-appearance: none;

@@ -3,6 +3,7 @@ import styled from 'vue-styled-components';
 
 export const Section = styled.section`
     padding: 2rem;
+    height: 100%;
     @media screen and (min-width: 1000px) {
         padding: 4rem 4rem 0 6rem;
     }
@@ -11,6 +12,7 @@ export const Section = styled.section`
 export const Flex = styled.div`
     display: flex;
     flex-direction: column;
+    height: 100%;
     @media screen and (min-width: 1000px) {
         flex-direction: row;
     }

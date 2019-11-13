@@ -61,6 +61,7 @@ html {
   background-color: #1A1B1E;
   color: #F3F9FC;
   font-size: 10px;
+  height: 100%;
 }
 @media screen and (min-width: 320px) {
   html {

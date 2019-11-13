@@ -15,7 +15,7 @@
                     name="slide-in-2"
                     mode="out-in">
                         <a :href="this.album.link">
-                            <H2>{{this.album.title}}</H2>
+                            <H2 class="link">{{this.album.title}}</H2>
                         </a>
                 </transition>
                 <transition

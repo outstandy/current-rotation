@@ -1,18 +1,18 @@
 <template>
     <transition appear name="fade">
         <NavBar>
-            <router-link :active="active" class="nav-button" to="/" tag="div">
-                <NavButton :class="navButton">
+            <router-link class="nav-button" to="/" tag="div">
+                <NavButton>
                     <Detail>Current Rotation</Detail>
                 </NavButton>       
             </router-link>
-            <router-link :active="active" class="nav-button" to="/quiet-time" tag="div">
-                <NavButton :class="navButton">
+            <router-link class="nav-button" to="/quiet-time" tag="div">
+                <NavButton >
                     <Detail>Quiet Time</Detail>
                 </NavButton>
             </router-link>
-            <router-link :active="active" class="nav-button" to="/fight-me" tag="div">
-                <NavButton :class="navButton">
+            <router-link class="nav-button" to="/fight-me" tag="div">
+                <NavButton>
                     <Detail>Fight Me</Detail>
                 </NavButton>
             </router-link>
